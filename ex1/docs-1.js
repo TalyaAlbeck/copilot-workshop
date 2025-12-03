@@ -1,3 +1,8 @@
+/**
+ * this is a sample function that sums up the elements of an array
+ * @param arr - array of numbers 
+ * @returns the sum of the elements in the array
+ */
 function fn(arr) {
     let r = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -15,7 +20,11 @@ function test1() {
     const result2 = fn(arr2);
     console.log(result2); // Output: 60
 
-    if (result === 15 && result2 === 60) {
+    const arr3 = [];
+    const result3 = fn(arr3);
+    console.log(result3); // Output: 0
+
+    if (result === 15 && result2 === 60 && result3 === 0) {
         console.log("Success!");
     } else {
         console.log("Failure!");
